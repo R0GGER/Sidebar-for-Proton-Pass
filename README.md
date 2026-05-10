@@ -47,31 +47,6 @@ that keeps the key outside of the UI.
 You will then stay signed in *and* your vault will stay unlocked as long
 as you are signed in to your Proton account in Firefox.
 
-## Permanent install
-
-By default Firefox requires extensions to be signed by Mozilla. You have
-two options:
-
-### Option A — Package and self-sign via AMO
-
-1. Create a ZIP of the contents of this folder (note: zip the files, not
-   the folder itself):
-   - Select `manifest.json`, `background.js`, `sidebar.html`, and the
-     `icons/` folder.
-   - Make a ZIP and rename the extension to `.xpi`.
-2. Create a (free) account on
-   [addons.mozilla.org](https://addons.mozilla.org/developers/).
-3. Upload the `.xpi` file under **"Submit a New Add-on"** and choose
-   **"On your own"** (self-hosted). You will receive a signed `.xpi`
-   that you can install in Firefox via `about:addons` → gear icon →
-   *"Install Add-on From File…"*.
-
-### Option B — Firefox Developer Edition / Nightly / ESR
-
-In these editions you can set `xpinstall.signatures.required` to `false`
-in `about:config`, allowing you to install the unsigned `.xpi` directly.
-This does **not** work in regular Firefox release.
-
 ## FAQ
 
 **Can I assign a different keyboard shortcut?**
